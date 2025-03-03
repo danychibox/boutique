@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue de Produits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* Header amélioré */
+        header {
+            background: linear-gradient(135deg, #010f1d, #004080);
+            color: white;
+            padding: 15px 20px;
+            font-size: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Effets de survol */
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+            display: block;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #010f1d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Effet de survol sur le bouton */
+        button:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nos Produits</h1>
+    </header>
+
+    <main>
+        <div>
+            <h1>tous nos produits</h1>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="orange.jpeg" alt="Produit 1">
+                <h2>Produit 1</h2>
+                <p>Description du produit 1.</p>
+                <span class="price">19.99€</span>
+                <button>Afficher</button>
+            </div>
+            <div class="product-card">
+                <img src="orange.jpeg" alt="Produit 2">
+                <h2>Produit 2</h2>
+                <p>Description du produit 2.</p>
+                <span class="price">29.99€</span>
+                <button>Afficher</button>
+            </div>
+            <div class="product-card">
+                <img src="orange.jpeg" alt="Produit 3">
+                <h2>Produit 3</h2>
+                <p>Description du produit 3.</p>
+                <span class="price">39.99€</span>
+                <button>Afficher</button>
+            </div>
+            <div class="product-card">
+                <img src="orange.jpeg" alt="Produit 4">
+                <h2>Produit 4</h2>
+                <p>Description du produit 4.</p>
+                <span class="price">49.99€</span>
+                <button>Afficher</button>
+            </div>
+            <div class="product-card">
+                <img src="orange.jpeg" alt="Produit 5">
+                <h2>Produit 5</h2>
+                <p>Description du produit 5.</p>
+                <span class="price">59.99€</span>
+                <button>Afficher</button>
+            </div>
+            <div class="product-card">
+                <img src="orange.jpeg" alt="Produit 6">
+                <h2>Produit 6</h2>
+                <p>Description du produit 6.</p>
+                <span class="price">69.99€</span>
+                <button>Afficher</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
